@@ -1,0 +1,32 @@
+swipe:
+  4:
+    up:
+      sendkey: "leftalt+f10"
+    down:
+      sendkey: "leftctrl+leftshift+leftalt+h"
+    left:
+      sendkey: "super+Right"
+    right:
+      sendkey: "supre+Left"
+  3:
+    left:
+      sendkey: "leftctrl+tab"
+    right:
+      sendkey: "leftctrl+leftshift+tab"
+hold:
+  3:
+    begin:
+      sendkey: "leftalt+M"
+  4:
+    begin:
+      sendkey: "leftalt+f4" 
+pinch:
+  2:
+    in:
+      begin:
+        #sendkey: "leftalt+f10"
+        command: 'xdotool keydown ctrl click 5 keyup ctrl' # Zoom in
+    out:
+      begin:
+        #sendkey: "leftalt+f10"
+        command: 'xdotool keydown ctrl click 4 keyup ctrl' # Zoom out
