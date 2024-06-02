@@ -5,14 +5,9 @@ swipe:
     down:
       sendkey: "leftctrl+leftshift+leftalt+h"
     left:
-      command: 'xdotool key super+Page_Down'
+        command: 'xdotool key super+Page_Down'
     right:
-      command: 'xdotool key super+Page_Up'
-  3:
-    left:
-      sendkey: "leftctrl+tab"
-    right:
-      sendkey: "leftctrl+leftshift+tab"
+        command: 'xdotool key super+Page_Up'
 hold:
   3:
     begin:
@@ -30,3 +25,12 @@ pinch:
       begin:
         #sendkey: "leftalt+f10"
         command: 'xdotool keydown ctrl click 4 keyup ctrl' # Zoom out
+---
+context:
+  application: Google-chrome
+swipe:
+  3:
+    left:
+      sendkey: "leftctrl+tab"
+    right:
+      sendkey: "leftctrl+leftshift+tab"
