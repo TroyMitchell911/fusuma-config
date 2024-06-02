@@ -5,9 +5,9 @@ swipe:
     down:
       sendkey: "leftctrl+leftshift+leftalt+h"
     left:
-      sendkey: "super+Right"
+      command: 'xdotool key super+Page_Down'
     right:
-      sendkey: "supre+Left"
+      command: 'xdotool key super+Page_Up'
   3:
     left:
       sendkey: "leftctrl+tab"
