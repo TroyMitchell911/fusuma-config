@@ -40,7 +40,16 @@ context:
 swipe:
   3:
     left:
-      command: 'xdotool key ctrl+Page_Up'
-    right:
       command: 'xdotool key ctrl+Page_Down'
+    right:
+      command: 'xdotool key ctrl+Page_Up'
+---
+context:
+  application: Org.gnome.Nautilus
+swipe:
+  3:
+    left:
+      command: 'xdotool key ctrl+Page_Down'
+    right:
+      command: 'xdotool key ctrl+Page_Up'
 
