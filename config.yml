@@ -34,6 +34,10 @@ swipe:
       sendkey: "leftctrl+tab"
     right:
       sendkey: "leftctrl+leftshift+tab"
+    up:
+      command: 'xdotool key alt+Left'
+    down:
+      command: 'xdotool key alt+Right'
 ---
 context:
   application: Gnome-terminal
@@ -52,4 +56,8 @@ swipe:
       command: 'xdotool key ctrl+Page_Down'
     right:
       command: 'xdotool key ctrl+Page_Up'
+    up:
+      command: 'xdotool key alt+Left'
+    down:
+      command: 'xdotool key alt+Right'
 
