@@ -40,6 +40,15 @@ swipe:
       command: 'xdotool key alt+Right'
 ---
 context:
+  application: eDEX-UI
+swipe:
+  3:
+    left:
+      command: 'xdotool key ctrl+Tab'
+    right:
+      command: 'xdotool key ctrl+shift+Tab'
+---
+context:
   application: Gnome-terminal
 swipe:
   3:
@@ -60,4 +69,5 @@ swipe:
       command: 'xdotool key alt+Left'
     down:
       command: 'xdotool key alt+Right'
+
 
