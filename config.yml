@@ -1,19 +1,25 @@
 swipe:
   4:
+    # 窗口:切换最大化状态
     up:
       sendkey: "leftalt+f10"
+    # 窗口: 隐藏窗口
     down:
-      sendkey: "leftctrl+leftshift+leftalt+h"
+      sendkey: "leftctrl+leftshift+leftalt+v"
+    # 导航: 移动到右侧工作区
     left:
-        command: 'xdotool key super+Page_Down'
+        command: 'xdotool key leftctrl+leftshift+leftalt+h'
+    # 导航: 移动到左侧工作区
     right:
-        command: 'xdotool key super+Page_Up'
+        command: 'xdotool key leftctrl+leftshift+leftalt+l'
 hold:
   3:
-    begin:
-      sendkey: "leftalt+M"
+   begin:
+     # 窗口: 移动窗口
+     sendkey: "leftalt+M"
   4:
     begin:
+      # 窗口: 关闭窗口
       sendkey: "leftalt+f4" 
 pinch:
   2:
@@ -69,5 +75,16 @@ swipe:
       command: 'xdotool key alt+Left'
     down:
       command: 'xdotool key alt+Right'
-
-
+---
+context:
+  application: Code
+swipe:
+  3:
+    left:
+      command: 'xdotool key ctrl+Page_Down'
+    right:
+      command: 'xdotool key ctrl+Page_Up'
+    up:
+      command: 'xdotool key ctrl+alt+minus' # ctrl+alt+-
+    down:
+      command: 'xdotool key ctrl+alt+shift+minus' # ctrl+alt+=
