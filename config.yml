@@ -8,10 +8,10 @@ swipe:
       sendkey: "leftctrl+leftshift+leftalt+v"
     # 导航: 移动到右侧工作区
     left:
-        command: 'xdotool key leftctrl+leftshift+leftalt+h'
+      sendkey: "leftctrl+leftshift+leftalt+l"
     # 导航: 移动到左侧工作区
     right:
-        command: 'xdotool key leftctrl+leftshift+leftalt+l'
+      sendkey: "leftctrl+leftshift+leftalt+h"
 hold:
   3:
    begin:
